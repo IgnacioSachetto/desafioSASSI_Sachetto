@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main .titulosSeccion {
+  background-image: linear-gradient(to top, black 20%, rgb(61, 50, 50));
+  border: 1px solid white;
+  height: 45px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7px;
+  font-family: "Cabin", sans-serif;
+  grid-area: tituloSeccion;
+  display: block;
+}
+main .itemSobreMi {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "imagen botones " "parrafo parrafo ";
+}
+main .itemSobreMi .padreImagenSobreMi {
+  grid-area: imagen;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to left, black 20%, rgb(61, 50, 50));
+}
+main .itemSobreMi .padreImagenSobreMi .imagen-sobre-mi {
+  height: 300px;
+  width: 250px;
+  margin: auto;
+  border-radius: 20%;
+  border: 3px outset black;
+}
+main .itemSobreMi .padreImagenSobreMi p {
+  font-size: 50px;
+  margin: auto;
+}
+main .itemSobreMi .cv-sobre-mi {
+  grid: botones;
+  margin: auto;
+  background-image: linear-gradient(to right, black 20%, rgb(61, 50, 50));
+}
+main .itemSobreMi .cv-sobre-mi .botones-sobre-mi {
+  text-decoration: none;
+  background: black;
+  border-bottom: 5px solid grey;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px white;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  margin: 70px;
+  display: block;
+}
+main .itemSobreMi .cv-sobre-mi .botones-sobre-mi:hover {
+  text-decoration: none;
+  background: white;
+  border-bottom: 5px solid black;
+  border-radius: 12px;
+  box-shadow: 6px 6px 6px white;
+  color: black;
+  cursor: pointer;
+  padding: 30px;
+  text-align: center;
+  width: 400px;
+  margin: 70px;
+  display: block;
+  transform: scale(1.1);
+  transition: all;
+  transition-duration: 1s;
+}
+main .itemSobreMi .parrafoSobreMi {
+  grid-area: parrafo;
+}
+main .itemSobreMi .parrafoSobreMi h3 {
+  border: 1px solid white;
+  text-align: center;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main .itemSobreMi .parrafoSobreMi .titulosSeccion {
+  background-image: linear-gradient(to top, black 20%, rgb(61, 50, 50));
+  border: 1px solid white;
+  height: 45px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 7px;
+  font-family: "Cabin", sans-serif;
+  grid-area: tituloSeccion;
+  display: block;
+}
+main .itemSobreMi .parrafoSobreMi .sobre-mi-texto {
+  background-color: black;
+  border: 1px solid white;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0px 3px;
+}
+body .navbar {
+  border: 1px solid white;
+  display: block;
+}
+body .logo img {
+  grid-area: logo;
+  height: 40px;
+  margin-top: 2px;
+  margin-left: 1px;
+}
+
+.padreFooterSobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footerS footerS";
+}
+.padreFooterSobre .footerSobreMi {
+  background-color: grey;
+  color: white;
+  border: 2px solid white;
+  grid-area: footerS;
+  margin-top: 50px;
+  width: 100%;
+}
+.padreFooterSobre .footerSobreMi a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.padreFooterSobre .footerSobreMi .copyright {
+  float: right;
+  color: white;
+  grid-area: copy;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=destino.css.map */

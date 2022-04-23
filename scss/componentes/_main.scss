@@ -1,0 +1,107 @@
+main{
+    .titulosSeccion{ 
+        background-image: $degrade-top-20;
+        border:1px solid white;
+        height:45px;
+        text-align: center;
+        font-size: 30px;
+        margin-top:7px;
+        font-family: 'Cabin', sans-serif;
+        grid-area: tituloSeccion;
+        display: block;
+    }
+
+
+    .itemSobreMi{
+        display:grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "imagen botones "
+        "parrafo parrafo "
+        ;
+        .padreImagenSobreMi{
+            grid-area: imagen;
+            display:flex;
+            flex-direction: column;
+            background-image: $degrade-left-20;
+            .imagen-sobre-mi{
+                height: 300px;
+                width:250px;
+                margin: auto;
+                border-radius: 20%;
+                border:3px outset black;
+            }
+
+            p{
+                font-size: 50px;
+                margin: auto;
+            } 
+        }
+
+        .cv-sobre-mi{
+            grid:botones;
+            margin:auto;
+            background-image: $degrade-right-20;
+            .botones-sobre-mi{
+                text-decoration: none;
+                background: black;
+                border-bottom: 5px solid grey;
+                border-radius: 12px;
+                box-shadow: 6px 6px 6px white;
+                color: white;
+                cursor: pointer;
+                padding: 30px;
+                text-align: center;
+                width: 400px;
+                margin:70px;
+                display:block;
+                &:hover{
+                    text-decoration: none;
+                    background: white;
+                    border-bottom: 5px solid black;
+                    border-radius: 12px;
+                    box-shadow: 6px 6px 6px white;
+                    color: black;
+                    cursor: pointer;
+                    padding: 30px;
+                    text-align: center;
+                    width: 400px;
+                    margin:70px;
+                    display:block;
+                    transform: scale(1.1);
+                    transition: all;
+                    transition-duration: 1s;
+                }
+            }
+        }
+
+        .parrafoSobreMi{
+            grid-area: parrafo;
+            h3{
+                border:1px solid white;
+                text-align: center;
+                font-size: 25px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .titulosSeccion{ 
+                background-image: $degrade-top-20;
+                border:1px solid white;
+                height:45px;
+                text-align: center;
+                font-size: 30px;
+                margin-top:7px;
+                font-family: 'Cabin', sans-serif;
+                grid-area: tituloSeccion;
+                display: block;
+            }
+            .sobre-mi-texto{
+                background-color: black;
+                border:1px solid white;
+            }
+            
+        }
+    
+    }
+}
+
